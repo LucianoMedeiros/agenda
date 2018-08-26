@@ -34,7 +34,7 @@ const addressSchema = new mongoose.Schema({
 const socialMediaSchema = new mongoose.Schema({
     media:          { type: String, required: true, lowercase: true },
     url:            { type: String, required: true, lowercase: true },
-    id:             { type: String, required: true, lowercase: true },
+    id:             { type: String, required: false },
     alias:          { type: String, required: true, lowercase: true },
     registerDate:   { type: Number, required: true, default: new Date().getTime() },
     removedDate:    { type: Number, required: false }
